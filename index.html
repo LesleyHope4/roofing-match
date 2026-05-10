@@ -18,27 +18,29 @@
         body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
 
         .hero {
-            background: linear-gradient(rgba(30, 41, 59, 0.85), rgba(30, 41, 59, 0.85)), 
+            /* This adds a professional roofing image with a dark overlay so text stays readable */
+            background: linear-gradient(rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 0.7)), 
                         url('https://images.unsplash.com/photo-1632759162353-3328393081e3?auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
-            padding: 100px 20px;
+            background-attachment: fixed;
+            padding: 120px 20px;
             color: white;
             text-align: center;
         }
 
         .container { max-width: 1100px; margin: 0 auto; }
 
-        h1 { font-size: 2.2rem; margin-bottom: 15px; font-weight: 800; }
-        p.subtitle { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
+        h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 800; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        p.subtitle { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
 
         .form-card {
             background: white;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
             max-width: 450px;
-            margin: -80px auto 40px auto;
+            margin: -60px auto 40px auto;
             color: var(--dark);
             position: relative;
             z-index: 10;
@@ -87,7 +89,7 @@
 
         @media (max-width: 600px) {
             h1 { font-size: 1.8rem; }
-            .hero { padding: 60px 15px; }
+            .hero { padding: 80px 15px; background-attachment: scroll; }
             .form-card { margin-top: -40px; width: 92%; padding: 20px; }
         }
     </style>
@@ -104,7 +106,7 @@
     <div class="container">
         <div class="form-card">
             <h2>Request a Free Quote</h2>
-            <form action="https://formspree.io/f/your-id" method="POST">
+            <form action="https://formspree.io/f/xwvywayg" method="POST">
                 <label>FULL NAME</label>
                 <input type="text" name="name" placeholder="e.g. Sipho Khumalo" required>
                 
@@ -131,12 +133,12 @@
             <div class="trust-card">
                 <i class="fas fa-check-circle"></i>
                 <h3>Local Pros</h3>
-                <p>We connect you with contractors who know the local weather and building styles.</p>
+                <p>We connect you with contractors who know South African weather and building styles.</p>
             </div>
             <div class="trust-card">
                 <i class="fas fa-shield-alt"></i>
                 <h3>Verified Quality</h3>
-                <p>Vetted partners with a track record of excellent service in South Africa.</p>
+                <p>Vetted partners with a track record of excellent service in Gauteng and beyond.</p>
             </div>
             <div class="trust-card">
                 <i class="fas fa-clock"></i>
@@ -148,7 +150,7 @@
 
     <footer>
         <p>&copy; 2026 Roofing Match South Africa. All rights reserved.</p>
-        <p>Helping homeowners connect with local experts.</p>
+        <p>Helping homeowners connect with local experts in Soweto and Johannesburg.</p>
     </footer>
 
     <script>
@@ -161,7 +163,6 @@
             })
             .catch(error => {
                 console.log("Location detection skipped.");
-                // Default fallback if detection fails
                 document.getElementById('city-name').innerText = "Gauteng"; 
             });
     </script>
