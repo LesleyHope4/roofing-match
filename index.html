@@ -1,88 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    :root { --primary: #2563eb; --solar: #f59e0b; --dark: #1e293b; --light: #f8fafc; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+    .hero {
+        background-image: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), 
+                          url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80');
+        background-size: cover; background-position: center; padding: 80px 20px; color: white; text-align: center;
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
     
-    <title>Roofing & Solar Quotes Johannesburg | Free Local Estimates</title>
-    <meta name="description" content="Get free quotes for roofing repairs, waterproofing, and solar panel installation in Johannesburg and Soweto. Trusted local contractors.">
-    <meta name="keywords" content="roofing soweto, solar installers johannesburg, roof repair gauteng, waterproofing soweto">
+    .form-card {
+        background: white; padding: 25px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        max-width: 450px; margin: -50px auto 40px auto; position: relative; z-index: 10;
+    }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root { --primary: #2563eb; --solar: #f59e0b; --dark: #1e293b; --light: #f8fafc; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
-        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+    h1 { font-size: 1.8rem; margin-bottom: 10px; }
+    label { display: block; font-size: 0.75rem; font-weight: bold; margin-bottom: 5px; color: #64748b; text-align: left; }
+    
+    input, select { 
+        width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; 
+        font-size: 16px; /* Prevents iPhone zoom on focus */
+    }
+    
+    button {
+        width: 100%; 
+        min-height: 60px; /* Ensures the button is tall enough for the text */
+        padding: 10px 20px; 
+        background-color: var(--primary); 
+        color: white;
+        border: none; 
+        border-radius: 6px; 
+        font-size: 1.1rem; 
+        font-weight: bold; 
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    button:hover { background-color: #1d4ed8; }
 
-        .hero {
-            background-image: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), 
-                              url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover; background-position: center; padding: 100px 20px; color: white; text-align: center;
-        }
-
-        .container { max-width: 1100px; margin: 0 auto; }
-        .form-card {
-            background: white; padding: 30px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-            max-width: 480px; margin: -60px auto 40px auto; position: relative; z-index: 10;
-        }
-
-        h1 { font-size: 2.2rem; margin-bottom: 10px; }
-        label { display: block; font-size: 0.8rem; font-weight: bold; margin-bottom: 5px; color: #64748b; text-align: left; }
-        input, select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; }
-        
-        button {
-            width: 100%; padding: 160px; background-color: var(--primary); color: white;
-            border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer;
-        }
-        button:hover { background-color: #1d4ed8; }
-
-        .trust-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center; padding: 40px 0; }
-        footer { text-align: center; padding: 40px; background: #f1f5f9; color: #64748b; font-size: 0.85rem; }
-    </style>
-</head>
-<body>
-
-    <section class="hero">
-        <div class="container">
-            <h1>Expert Roofing & <span style="color:var(--solar)">Solar</span> in <span id="city-name">Johannesburg</span></h1>
-            <p>Save money with 3 free quotes from local specialists.</p>
-        </div>
-    </section>
-
-    <div class="container">
-        <div class="form-card">
-            <form action="https://formspree.io/f/xwvywayg" method="POST">
-                <label>FULL NAME</label>
-                <input type="text" name="name" placeholder="e.g. Sipho Khumalo" required>
-                
-                <label>PHONE NUMBER</label>
-                <input type="tel" name="phone" placeholder="081 234 5678" required>
-                
-                <label>WHAT DO YOU NEED?</label>
-                <select name="service" required>
-                    <option value="">-- Select Service --</option>
-                    <option value="solar">Solar Panel Installation</option>
-                    <option value="roof_solar_combo">Roof Repair + Solar Combo</option>
-                    <option value="roof_repair">Roof Leak Repair</option>
-                    <option value="waterproofing">Waterproofing</option>
-                </select>
-                
-                <label>POSTAL CODE</label>
-                <input type="text" name="postal_code" placeholder="e.g. 1818" required>
-                
-                <button type="submit">GET MY FREE QUOTES</button>
-            </form>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Roofing & Solar Match SA. Serving Soweto, Sandton, and Greater Joburg.</p>
-    </footer>
-
-    <script>
-        fetch('https://ipapi.co/json/')
-            .then(res => res.json())
-            .then(data => { if(data.city) document.getElementById('city-name').innerText = data.city; });
-    </script>
-</body>
-</html>
+    footer { text-align: center; padding: 40px; background: #f1f5f9; color: #64748b; font-size: 0.85rem; }
+</style>
