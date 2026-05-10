@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | Top Rated Local Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb; /* Change this to your brand color */
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #f59e0b;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+        /* Header/Hero Section */
+        .hero {
+            background: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), 
+                        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80'); /* Roofing/Solar placeholder image */
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        p.subtitle { font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9; }
+
+        /* The Lead Form Card */
+        .form-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: -60px auto 40px auto;
+            color: var(--dark);
+        }
+
+        .form-card h2 { margin-bottom: 20px; text-align: center; color: var(--primary); }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover { background-color: #1d4ed8; }
+
+        /* Trust Section */
+        .trust-icons {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            padding: 20px;
+        }
+
+        .icon-box { text-align: center; flex: 1; min-width: 200px; padding: 20px; }
+        .icon-box i { font-size: 2.5rem; color: var(--accent); margin-bottom: 10px; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #64748b; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .form-card { margin-top: 20px; width: 95%; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Save Thousands on Your New Roof</h1>
+            <p class="subtitle">Compare 3 free quotes from licensed local contractors in [Your City].</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="form-card">
+            <h2>Get Your Free Estimate</h2>
+            <!-- REPLACE ACTION WITH YOUR FORMSPREE/NETLIFY LINK -->
+            <form action="https://formspree.io/f/your-id" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <select name="service_type" required>
+                    <option value="">Select Service Needed</option>
+                    <option value="roof_repair">Roof Repair</option>
+                    <option value="new_installation">New Installation</option>
+                    <option value="inspection">Inspection</option>
+                </select>
+                <input type="text" name="zip" placeholder="Zip Code" required>
+                <button type="submit">Get My Free Quotes</button>
+            </form>
+        </div>
+
+        <section class="trust-icons">
+            <div class="icon-box">
+                <i class="fas fa-certificate"></i>
+                <h3>Certified Pro</h3>
+                <p>Licensed and insured partners only.</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Turnaround</h3>
+                <p>Get your quotes in under 24 hours.</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-star"></i>
+                <h3>Top Rated</h3>
+                <p>Average 4.8/5 star service rating.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Local Roofing Leads. All rights reserved.</p>
+        <p>Contact Us | Privacy Policy</p>
+    </footer>
+
+</body>
+</html>
