@@ -3,107 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roofing Match | Free Local Estimates</title>
+    
+    <title>Roofing & Solar Quotes Johannesburg | Free Local Estimates</title>
+    <meta name="description" content="Get free quotes for roofing repairs, waterproofing, and solar panel installation in Johannesburg and Soweto. Trusted local contractors.">
+    <meta name="keywords" content="roofing soweto, solar installers johannesburg, roof repair gauteng, waterproofing soweto">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #2563eb; 
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --accent: #f59e0b;
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-        
+        :root { --primary: #2563eb; --solar: #f59e0b; --dark: #1e293b; --light: #f8fafc; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
         body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
 
         .hero {
-        background-image: linear-gradient(rgba(30, 41, 59, 0.75), rgba(30, 41, 59, 0.75)), 
-                  url('https://images.unsplash.com/photo-1632759162353-3328393081e3?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            padding: 120px 20px;
-            color: white;
-            text-align: center;
+            background-image: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), 
+                              url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center; padding: 100px 20px; color: white; text-align: center;
         }
 
         .container { max-width: 1100px; margin: 0 auto; }
-
-        h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 800; }
-        p.subtitle { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
-
         .form-card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-            max-width: 450px;
-            margin: -60px auto 40px auto;
-            color: var(--dark);
-            position: relative;
-            z-index: 10;
+            background: white; padding: 30px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            max-width: 480px; margin: -60px auto 40px auto; position: relative; z-index: 10;
         }
 
-        .form-card h2 { margin-bottom: 20px; text-align: center; color: var(--primary); font-size: 1.5rem; }
-
-        label { display: block; font-size: 0.8rem; font-weight: bold; margin-bottom: 5px; color: #64748b; }
-        input, select {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 1px solid #cbd5e1;
-            border-radius: 6px;
-            font-size: 1rem;
-        }
-
+        h1 { font-size: 2.2rem; margin-bottom: 10px; }
+        label { display: block; font-size: 0.8rem; font-weight: bold; margin-bottom: 5px; color: #64748b; text-align: left; }
+        input, select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; }
+        
         button {
-            width: 100%;
-            padding: 16px;
-            background-color: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
+            width: 100%; padding: 160px; background-color: var(--primary); color: white;
+            border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer;
         }
+        button:hover { background-color: #1d4ed8; }
 
-        button:hover { background-color: #1d4ed8; transform: translateY(-2px); }
-
-        .trust-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .trust-card { padding: 20px; }
-        .trust-card i { font-size: 2rem; color: var(--accent); margin-bottom: 15px; }
-        .trust-card h3 { margin-bottom: 10px; font-size: 1.2rem; }
-
-        footer { text-align: center; padding: 60px 20px; background: #f1f5f9; color: #64748b; font-size: 0.85rem; }
-
-        @media (max-width: 600px) {
-            h1 { font-size: 1.8rem; }
-            .hero { padding: 80px 15px; }
-            .form-card { margin-top: -40px; width: 92%; padding: 20px; }
-        }
+        .trust-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center; padding: 40px 0; }
+        footer { text-align: center; padding: 40px; background: #f1f5f9; color: #64748b; font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
     <section class="hero">
         <div class="container">
-            <h1 id="main-heading">Expert Roofing Services in <span id="city-name">Johannesburg</span></h1>
-            <p class="subtitle">Get 3 free quotes from NHBRC-approved local contractors today.</p>
+            <h1>Expert Roofing & <span style="color:var(--solar)">Solar</span> in <span id="city-name">Johannesburg</span></h1>
+            <p>Save money with 3 free quotes from local specialists.</p>
         </div>
     </section>
 
     <div class="container">
         <div class="form-card">
-            <h2>Request a Free Quote</h2>
             <form action="https://formspree.io/f/xwvywayg" method="POST">
                 <label>FULL NAME</label>
                 <input type="text" name="name" placeholder="e.g. Sipho Khumalo" required>
@@ -111,58 +58,31 @@
                 <label>PHONE NUMBER</label>
                 <input type="tel" name="phone" placeholder="081 234 5678" required>
                 
-                <label>SERVICE NEEDED</label>
+                <label>WHAT DO YOU NEED?</label>
                 <select name="service" required>
-                    <option value="">-- Select --</option>
-                    <option value="repair">Roof Leak Repair</option>
-                    <option value="full_replacement">Full Roof Replacement</option>
+                    <option value="">-- Select Service --</option>
+                    <option value="solar">Solar Panel Installation</option>
+                    <option value="roof_solar_combo">Roof Repair + Solar Combo</option>
+                    <option value="roof_repair">Roof Leak Repair</option>
                     <option value="waterproofing">Waterproofing</option>
-                    <option value="gutters">Gutter Installation</option>
                 </select>
                 
                 <label>POSTAL CODE</label>
                 <input type="text" name="postal_code" placeholder="e.g. 1818" required>
                 
-                <button type="submit">GET MY QUOTES NOW</button>
+                <button type="submit">GET MY FREE QUOTES</button>
             </form>
-        </div>
-
-        <div class="trust-section">
-            <div class="trust-card">
-                <i class="fas fa-check-circle"></i>
-                <h3>Local Pros</h3>
-                <p>We connect you with contractors who know the local weather and building styles.</p>
-            </div>
-            <div class="trust-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Verified Quality</h3>
-                <p>Vetted partners with a track record of excellent service in South Africa.</p>
-            </div>
-            <div class="trust-card">
-                <i class="fas fa-clock"></i>
-                <h3>Fast & Free</h3>
-                <p>Our matching service is 100% free with no obligation to hire.</p>
-            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Roofing Match South Africa. All rights reserved.</p>
-        <p>Helping homeowners connect with local experts.</p>
+        <p>&copy; 2026 Roofing & Solar Match SA. Serving Soweto, Sandton, and Greater Joburg.</p>
     </footer>
 
     <script>
         fetch('https://ipapi.co/json/')
-            .then(response => response.json())
-            .then(data => {
-                if (data.city) {
-                    document.getElementById('city-name').innerText = data.city;
-                }
-            })
-            .catch(error => {
-                console.log("Location detection skipped.");
-            });
+            .then(res => res.json())
+            .then(data => { if(data.city) document.getElementById('city-name').innerText = data.city; });
     </script>
-
 </body>
 </html>
