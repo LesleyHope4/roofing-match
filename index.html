@@ -6,106 +6,79 @@
     
     <title>Roofing & Solar Quotes Johannesburg | Free Local Estimates</title>
     <meta name="description" content="Get free quotes for roofing repairs, waterproofing, and solar panel installation in Johannesburg and Soweto. NHBRC approved contractors.">
-    <meta name="keywords" content="roofing soweto, solar installers johannesburg, roof repair gauteng, waterproofing soweto, cheap solar panels joburg">
-    <meta name="author" content="Roofing & Solar Match SA">
+    <meta name="keywords" content="roofing soweto, solar installers johannesburg, roof repair gauteng, waterproofing soweto">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <style>
         :root { --primary: #2563eb; --solar: #f59e0b; --dark: #1e293b; --light: #f8fafc; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: var(--light); color: var(--dark); line-height: 1.6; min-height: 100vh; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
 
         .hero {
-            background-image: linear-gradient(rgba(30, 41, 59, 0.85), rgba(30, 41, 59, 0.85)), 
+            background-image: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), 
                               url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover; background-position: center; padding: 60px 20px 100px; color: white; text-align: center;
+            background-size: cover; background-position: center; padding: 100px 20px; color: white; text-align: center;
         }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        
+        .container { max-width: 1100px; margin: 0 auto; }
         .form-card {
             background: white; padding: 30px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-            max-width: 480px; margin: -60px auto 40px; position: relative; z-index: 10;
+            max-width: 480px; margin: -60px auto 40px auto; position: relative; z-index: 10;
         }
 
-        h1 { font-size: 2rem; margin-bottom: 10px; font-weight: 800; }
-        h2 { font-size: 1.2rem; margin-bottom: 25px; color: var(--primary); text-align: center; font-weight: 700; }
-        label { display: block; font-size: 0.75rem; font-weight: bold; margin-bottom: 5px; color: #64748b; text-align: left; text-transform: uppercase; }
+        h1 { font-size: 2.2rem; margin-bottom: 10px; }
+        label { display: block; font-size: 0.8rem; font-weight: bold; margin-bottom: 5px; color: #64748b; text-align: left; }
+        input, select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; }
         
-        input, select { 
-            width: 100%; padding: 14px; margin-bottom: 20px; border: 1px solid #cbd5e1; border-radius: 8px; 
-            font-size: 16px; background-color: #fff;
-        }
-        
-        /* THE BUTTON FIX: Centered, Tall, and Mobile-Friendly */
-        .btn-container { width: 100%; display: flex; justify-content: center; }
         button {
-            width: 100%; min-height: 65px; padding: 15px; 
-            background-color: var(--primary); color: white;
-            border: none; border-radius: 8px; font-size: 1.2rem; font-weight: 800; 
-            cursor: pointer; display: flex; align-items: center; justify-content: center;
-            transition: transform 0.2s, background 0.3s;
+            width: 100%; padding: 16px; background-color: var(--primary); color: white;
+            border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer;
         }
-        button:hover { background-color: #1d4ed8; transform: translateY(-2px); }
+        button:hover { background-color: #1d4ed8; }
 
-        .trust-icons { display: flex; justify-content: space-around; padding: 20px 0; border-top: 1px solid #f1f5f9; margin-top: 10px; }
-        .trust-icons i { color: var(--solar); font-size: 1.5rem; }
-
-        footer { text-align: center; padding: 40px 20px; background: #f1f5f9; color: #64748b; font-size: 0.85rem; }
+        footer { text-align: center; padding: 40px; background: #f1f5f9; color: #64748b; font-size: 0.85rem; }
     </style>
 </head>
 <body>
 
     <section class="hero">
         <div class="container">
-            <h1>Roofing & <span style="color:var(--solar)">Solar</span> Experts</h1>
-            <p>Serving <span id="city-name">Johannesburg</span> & Greater Gauteng</p>
+            <h1>Expert Roofing & <span style="color:var(--solar)">Solar</span> in <span id="city-name">Johannesburg</span></h1>
+            <p>Save money with 3 free quotes from local specialists.</p>
         </div>
     </section>
 
     <div class="container">
         <div class="form-card">
-            <h2>Request a Free Quote</h2>
             <form action="https://formspree.io/f/xwvywayg" method="POST">
-                <label>Full Name</label>
-                <input type="text" name="name" placeholder="Sipho Khumalo" required>
+                <label>FULL NAME</label>
+                <input type="text" name="name" placeholder="e.g. Sipho Khumalo" required>
                 
-                <label>Phone Number</label>
+                <label>PHONE NUMBER</label>
                 <input type="tel" name="phone" placeholder="081 234 5678" required>
                 
-                <label>Service Needed</label>
+                <label>WHAT DO YOU NEED?</label>
                 <select name="service" required>
-                    <option value="">-- Choose Service --</option>
+                    <option value="">-- Select Service --</option>
                     <option value="solar">Solar Panel Installation</option>
-                    <option value="solar_combo">Roof Repair + Solar</option>
+                    <option value="roof_solar_combo">Roof Repair + Solar Combo</option>
                     <option value="roof_repair">Roof Leak Repair</option>
-                    <option value="waterproofing">Waterproofing / Sealing</option>
+                    <option value="waterproofing">Waterproofing</option>
                 </select>
                 
-                <label>Postal Code</label>
+                <label>POSTAL CODE</label>
                 <input type="text" name="postal_code" placeholder="e.g. 1818" required>
                 
-                <div class="btn-container">
-                    <button type="submit">GET MY FREE QUOTES</button>
-                </div>
+                <button type="submit">GET MY FREE QUOTES</button>
             </form>
-
-            <div class="trust-icons">
-                <i class="fas fa-sun" title="Solar Ready"></i>
-                <i class="fas fa-shield-alt" title="NHBRC Standard"></i>
-                <i class="fas fa-check-circle" title="Vetted Pros"></i>
-            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Roofing & Solar Match SA. Serving Soweto, Sandton, and Johannesburg Central.</p>
-        <p style="margin-top:10px; font-size: 0.7rem;">Optimized for Gauteng Homeowners & Businesses.</p>
+        <p>&copy; 2026 Roofing & Solar Match SA. Serving Soweto, Sandton, and Greater Joburg.</p>
     </footer>
 
     <script>
-        // Automatic location detection for SEO relevance
         fetch('https://ipapi.co/json/')
             .then(res => res.json())
             .then(data => { if(data.city) document.getElementById('city-name').innerText = data.city; });
